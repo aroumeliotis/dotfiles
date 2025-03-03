@@ -18,6 +18,6 @@ else
         echo "Start Qtile X11 with command Qtile"
     fi
     if [ -f /bin/hyprctl ]; then
-        echo "Start Hyprland with command Hyprland"
+        echo "Start Hyprland with command Hyprland" > /dev/null
     fi
 fi

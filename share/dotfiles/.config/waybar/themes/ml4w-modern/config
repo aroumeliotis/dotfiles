@@ -1,12 +1,12 @@
-// __        __          _                 
-// \ \      / /_ _ _   _| |__   __ _ _ __  
-//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
-//   \ V  V / (_| | |_| | |_) | (_| | |    
-//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
-//                 |___/                   
-//  
-// by Stephan Raabe (2023) 
-// ----------------------------------------------------- 
+// __        __          _
+// \ \      / /_ _ _   _| |__   __ _ _ __
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__|
+//   \ V  V / (_| | |_| | |_) | (_| | |
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|
+//                 |___/
+//
+// by Stephan Raabe (2023)
+// -----------------------------------------------------
 //
 {
     // General Settings
@@ -14,7 +14,7 @@
     "margin-top": 14,
     "margin-bottom": 0,
     "margin-left": 14,
-    "margin-right": 14,    
+    "margin-right": 14,
     "spacing": 0,
 
     // Load Modules
@@ -27,30 +27,31 @@
     "modules-left": [
         "custom/appmenu",
         "hyprland/workspaces",
+        "custom/radio",
         "group/links",
         //"wlr/taskbar",
-        "group/quicklinks",
+        //"group/quicklinks",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
-        "custom/empty"
+    "custom/tiled-behind",
+    "hyprland/window",
+    "custom/empty"
     ],
 
-    // Modules Right    
+    // Modules Right
     "modules-right": [
         "custom/updates",
         "pulseaudio",
-        //"backlight",
+//"backlight",
         "bluetooth",
-        "network",
-        "battery", 
-        "power-profiles-daemon",
+        "battery",
+"network",
         "group/hardware",
         "group/tools",
-        "tray",
+"tray",
         "custom/notification",
         "custom/exit",
         "custom/ml4w-welcome",

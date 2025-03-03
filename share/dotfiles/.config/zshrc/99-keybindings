@@ -1,0 +1,10 @@
+# Keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
+
+bindkey "^[[H" beginning-of-line  # Home key
+bindkey "^[[F" end-of-line        # End key
+bindkey "^[[2~" overwrite-mode    # Insert key
+bindkey "^[[3~" delete-char       # Delete key
