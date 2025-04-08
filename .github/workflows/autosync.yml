@@ -27,5 +27,5 @@ jobs:
         run: |
           git remote add upstream https://github.com/mylinuxforwork/dotfiles.git  # Upstream repository URL
           git fetch upstream
-          git merge upstream/main  # Default branch of the upstream repository
+          git merge upstream/main --allow-unrelated-histories  # Default branch of the upstream repository
           git push origin main  # Default branch of your forked repository
