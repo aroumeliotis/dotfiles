@@ -22,6 +22,11 @@ jobs:
           repository: aroumeliotis/dotfiles  # Your forked repository details
           ref: main  # Default branch of your forked repository
           token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Configure Git user
+        run: |
+          git config --global user.email "aroumeliotis@gmail.com"  # Replace with your email
+          git config --global user.name "Andreas"  # Replace with your name
 
       - name: Sync with upstream
         run: |
