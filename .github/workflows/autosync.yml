@@ -13,19 +13,19 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
         with:
-          repository: aroumeliotis/dotfiles  # Replace with the upstream repository details
-          ref: main  # Replace with the default branch of the upstream repository
+          repository: mylinuxforwork/dotfiles  # Upstream repository details
+          ref: main  # Default branch of the upstream repository
 
       - name: Check out the forked repository
         uses: actions/checkout@v2
         with:
-          repository: <your-username>/<your-forked-repo>  # Replace with your forked repository details
-          ref: main  # Replace with the default branch of your forked repository
+          repository: aroumeliotis/dotfiles  # Your forked repository details
+          ref: main  # Default branch of your forked repository
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sync with upstream
         run: |
-          git remote add upstream https://github.com/mylinuxforwork/dotfiles.git  # Replace with the upstream repository URL
+          git remote add upstream https://github.com/mylinuxforwork/dotfiles.git  # Upstream repository URL
           git fetch upstream
-          git merge upstream/main  # Replace 'main' with the default branch of the upstream repository
-          git push origin main  # Replace 'main' with the default branch of your forked repository
+          git merge upstream/main  # Default branch of the upstream repository
+          git push origin main  # Default branch of your forked repository
